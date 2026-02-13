@@ -1,6 +1,5 @@
 import type {
   Mesa,
-  ItemCuenta,
   OrdenActiva,
   Producto,
   CierreDiario,

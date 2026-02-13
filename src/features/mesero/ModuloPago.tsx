@@ -91,7 +91,7 @@ export function ModuloPago() {
           Todo junto
         </Button>
         <Button
-          variant={tipoPago === 'dividir' ? 'primary' : 'secondary'}
+          variant="secondary"
           onClick={() => setTipoPago('dividir')}
           className={stylesPago.opcionBtn}
         >
