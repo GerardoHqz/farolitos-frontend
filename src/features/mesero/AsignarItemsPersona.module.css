@@ -1,0 +1,136 @@
+.screen {
+  padding: 24px;
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: var(--background);
+  min-height: 100vh;
+}
+
+.backLink {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+}
+
+.colProductos,
+.colAsignado {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colAsignado {
+  background: var(--card);
+  border-radius: var(--radius-m);
+  padding: 20px;
+  border: 1px solid var(--border);
+}
+
+.colTitulo {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.rowProducto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 52px;
+  background: var(--card);
+  border-radius: var(--radius-m);
+  border: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--foreground);
+}
+
+.btnPlus {
+  min-width: 44px;
+  padding: 0 12px;
+}
+
+.placeholder {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+
+.listaAsignados {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rowAsignado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  gap: 8px;
+}
+
+.textoAsignado {
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+
+.btnEliminar {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.subtotalRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.subtotalValor {
+  color: var(--primary);
+  font-size: 18px;
+}
+
+.continuarWrap {
+  margin-top: 8px;
+}
+
+.btnContinuar {
+  width: 100%;
+}

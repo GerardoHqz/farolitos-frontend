@@ -1,0 +1,375 @@
+.loginWrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--background);
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 440px;
+  padding: 48px !important;
+}
+
+.loginLogo {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto 16px;
+  object-fit: contain;
+}
+
+.loginSubtitle {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: var(--muted-foreground);
+  text-align: center;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.passwordWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.passwordLabel {
+  font-size: 12px;
+  color: var(--muted-foreground);
+  font-weight: normal;
+}
+
+.passwordInputRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.passwordInput {
+  width: 100%;
+  height: 44px;
+  padding: 0 44px 0 14px;
+  border-radius: var(--radius-m);
+  background: var(--background);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  font-size: 14px;
+}
+
+.passwordInput::placeholder {
+  color: var(--muted-foreground);
+}
+
+.passwordInput:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--muted-foreground);
+  cursor: pointer;
+  padding: 0;
+}
+
+.passwordToggle:hover {
+  color: var(--foreground);
+}
+
+.loginError {
+  margin: 0;
+  font-size: 13px;
+  color: var(--destructive);
+}
+
+.loginBtn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.sidebar {
+  width: 245px;
+  min-height: 100vh;
+  background: var(--card);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebarLogout {
+  margin-top: auto;
+  width: 100%;
+}
+
+.sidebarLogo {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.sidebarSub {
+  margin: 0 0 16px;
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 16px;
+  border-radius: var(--radius-m);
+  color: var(--muted-foreground);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: var(--foreground);
+}
+
+.navLink.active {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  font-weight: 600;
+}
+
+.main {
+  flex: 1;
+  padding: clamp(16px, 4vw, 32px);
+  overflow: auto;
+  min-width: 0;
+}
+
+.mainContent {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.adminLayout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--background);
+}
+
+.actionsRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 44px;
+}
+
+.tableWrap {
+  border-radius: var(--radius-m);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted-foreground);
+  background: var(--background);
+  border-bottom: 2px solid var(--border);
+}
+
+.table td {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--foreground);
+  border-top: 1px solid var(--border);
+}
+
+.table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Contenedor del formulario inline: centrado y responsive */
+.formInlineWrap {
+  width: 100%;
+  max-width: 520px;
+  min-width: 0;
+  align-self: center;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 24px);
+  box-sizing: border-box;
+}
+
+.formCard {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: clamp(20px, 5vw, 32px);
+}
+
+.formCard h2 {
+  margin: 0 0 20px;
+  font-size: clamp(18px, 2.5vw, 20px);
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.formCard form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 2vw, 20px);
+}
+
+.formActions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.formActions button {
+  min-width: 100px;
+}
+
+.metricCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.metricCard {
+  background: var(--card);
+  border-radius: var(--radius-m);
+  padding: 20px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.metricLabel {
+  display: block;
+  font-size: 12px;
+  color: var(--muted-foreground);
+  margin-bottom: 4px;
+}
+
+.metricCard span {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.metricCard.utilidad span {
+  color: var(--success);
+}
+
+.metricCard.rentabilidad span {
+  color: var(--primary);
+}
+
+.filtersRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chartBar {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  height: 200px;
+  margin-top: 16px;
+}
+
+.chartBarItem {
+  flex: 1;
+  min-width: 40px;
+  background: var(--primary);
+  border-radius: 4px;
+  min-height: 20px;
+}
+
+.mainTitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.mainSubtitle {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: var(--muted-foreground);
+}
+
+.sectionTitle {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--foreground);
+  text-align: center;
+}
+
+.lowStock {
+  color: var(--destructive);
+}
+
+.positive {
+  color: var(--success);
+}
+
+.cierreResumen {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cierreLabel {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+
+.cierreValor {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.cierreUtilidad {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.cierreText {
+  margin: 0;
+  font-size: 14px;
+  color: var(--foreground);
+}

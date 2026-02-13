@@ -1,0 +1,136 @@
+.modal {
+  padding: 24px;
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--background);
+}
+
+.titulo {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.montoRow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.montoLabel {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+
+.montoValor {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.opcionLabel {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+
+.opciones {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.opcionBtn {
+  flex: 1;
+  min-width: 140px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field label {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+
+.input {
+  height: 44px;
+  padding: 0 14px;
+  border-radius: var(--radius-m);
+  background: var(--background);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  font-size: 18px;
+}
+
+.cambioRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 16px;
+  background: var(--success);
+  color: #0c0c0c;
+  border-radius: var(--radius-m);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cambioRow span:last-child {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.totalLabel {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+
+.totalValor {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.tituloSecundario {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.selectorPersonas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.numBtn,
+.numBtnActive {
+  width: 64px;
+  height: 48px;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--foreground);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.numBtnActive {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  border-color: var(--primary);
+}
+
+.btn {
+  width: 100%;
+}

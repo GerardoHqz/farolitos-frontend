@@ -1,0 +1,111 @@
+.screen {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--background);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.logoImg {
+  display: block;
+  height: 40px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  margin: 0;
+}
+
+.role {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: var(--muted-foreground);
+}
+
+.backLink {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.gridLabel {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+
+.mesasGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 16px;
+}
+
+.mesa {
+  aspect-ratio: 1;
+  max-width: 72px;
+  border-radius: var(--radius-m);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--primary-foreground);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.mesaNumero {
+  color: inherit;
+}
+
+.mesaLibre {
+  color: var(--primary-foreground);
+}
+
+.mesaOcupada {
+  color: white;
+}
+
+.leyenda {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  height: 32px;
+}
+
+.leyendaItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.leyendaDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+}
+
+.leyendaLabel {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
